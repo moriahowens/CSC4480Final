@@ -26,6 +26,14 @@ insert into food_item values(fiOID.nextVal, 'Flamin Hot Cheetos', 'Frito Lay', T
 insert into food_item values(fiOID.nextVal, 'Chocolate Fudge Brownie', 'Ben and Jerrys', TO_DATE('03-MAR-23', 'DD-MON-YY'), 1, 4, TO_DATE('11-FEB-22', 'DD-MON-YY'));
 insert into food_item values(fiOID.nextVal, 'Ghost Pepper Potato Chips', 'Trader Joes', TO_DATE('05-JUN-23', 'DD-MON-YY'), 5, 2, TO_DATE('04-FEB-23', 'DD-MON-YY'));
 insert into food_item values(fiOID.nextVal, 'Island Bliss Raw Kombucha', 'GT Synergy', TO_DATE('10-MAY-23', 'DD-MON-YY'), 5, 3, TO_DATE('12-APR-23', 'DD-MON-YY'));
+insert into food_item values(fiOID.nextVal, 'Mozzarella Cheese', 'Belgioiso', TO_DATE('15-MAY-23', 'DD-MON-YY'), 2, 3, TO_DATE('10-FEB-22', 'DD-MON-YY'));
+insert into food_item values(fiOID.nextVal, 'Fruit Punch', 'Minute Maid', TO_DATE('20-MAY-23', 'DD-MON-YY'), 4, 2, TO_DATE('13-APR-23', 'DD-MON-YY'));
+insert into food_item values(fiOID.nextVal, 'Orange Juice', 'Tropicana', TO_DATE('01-MAY-23', 'DD-MON-YY'), 4, 2, TO_DATE('13-APR-23', 'DD-MON-YY'));
+insert into food_item values(fiOID.nextVal, 'Strawberry Yogurt', 'Yoplait ', TO_DATE('02-MAY-23', 'DD-MON-YY'), 4, 2, TO_DATE('13-APR-23', 'DD-MON-YY'));
+insert into food_item values(fiOID.nextVal, 'Butter', 'Land O Lakes', TO_DATE('03-AUG-23', 'DD-MON-YY'), 2, 3, TO_DATE('10-FEB-22', 'DD-MON-YY'));
+insert into food_item values(fiOID.nextVal, 'Whole Milk', 'Horizon Organic', TO_DATE('19-MAY-23', 'DD-MON-YY'), 5, 3, TO_DATE('12-APR-23', 'DD-MON-YY'));
+insert into food_item values(fiOID.nextVal, 'Ketchup', 'Heinz', TO_DATE('25-DEC-23', 'DD-MON-YY'), 5, 2, TO_DATE('04-FEB-23', 'DD-MON-YY'));
+insert into food_item values(fiOID.nextVal, 'Carrots', 'Bolthouse Farms', TO_DATE('01-MAY-23', 'DD-MON-YY'), 5, 3, TO_DATE('12-APR-23', 'DD-MON-YY'));
 
 -- select * from food_item;
 
