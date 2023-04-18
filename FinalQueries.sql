@@ -18,3 +18,27 @@ select * from food_item where store_id = (select store_id from grocery_store whe
  update food_item
  set exp_date = TO_DATE('01-JAN-25', 'DD-MON-YY')
  where food_name = 'Kiwi Strawberry' and food_brand = 'Snapple'; 
+
+--6 return food items and food brand bought at a grocery store in Villanova
+select food_name, food_brand
+from food_item
+where store_id in (select store_id
+from grocery_store
+where city in (select city
+from grocery_store from city = 'Villanova'));
+
+--7 return amount of food in fridges of type GE GNE27JYMFS
+select count(food_id)
+from food_item
+where fridge_id in (
+    select fridge_id
+    from fridge
+    where fridge_type = 'GE GNE27JYMFS');
+
+--8 return the maximum expiration date of items bought from GIANT stores
+select max(exp_date)
+from food_item
+where store_id in (
+    select store_id 
+    from grocery_store 
+    where store_name = 'GIANT');
