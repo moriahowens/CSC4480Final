@@ -42,3 +42,9 @@ where store_id in (
     select store_id 
     from grocery_store 
     where store_name = 'GIANT');
+
+--9 return food name and expiration date of items bought from Whole Foods Market
+SELECT food_name, exp_date
+FROM food_item JOIN grocery_store
+ON grocery_store.store_id = food_item.store_id
+WHERE grocery_store.store_name = 'Whole Foods Market';
