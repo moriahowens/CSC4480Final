@@ -48,3 +48,9 @@ SELECT food_name, exp_date
 FROM food_item JOIN grocery_store
 ON grocery_store.store_id = food_item.store_id
 WHERE grocery_store.store_name = 'Whole Foods Market';
+
+--10 return the food_items and maximum purchased date from fridge_id = 1, finds items purchased from latest shopping trip in a specific fridge
+select food_name, purchase_date
+from food_item
+where purchase_date = (select max(purchase_date) 
+from food_item where fridge_id = 3);
