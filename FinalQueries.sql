@@ -12,7 +12,9 @@ values (975312468, 'Theromo Scientific');
  where fridge_type in('KitchenAid','Theromo Scientific');
  
 --4 return food items bought at ACME
-select * from food_item where store_id = (select store_id from grocery_store where store_name = 'ACME');
+select * from food_item where store_id = 
+(select store_id from grocery_store 
+where store_name = 'ACME');
 
 --5 update expiration date of Snapple to 01/01/25
  update food_item
