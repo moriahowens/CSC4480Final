@@ -27,7 +27,7 @@ from food_item
 where store_id in (select store_id
 from grocery_store
 where city in (select city
-from grocery_store from city = 'Villanova'));
+from grocery_store where city = 'Villanova'));
 
 --7 return amount of food in fridges of type GE GNE27JYMFS
 select count(food_id)
